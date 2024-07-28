@@ -1,0 +1,757 @@
+:root{
+    --color1 : #dd1111;
+    --color2 : #262626;
+    --color3 : #000000;
+    --color4 : #fff;
+    --font1 : "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body{
+    font-family: var(--font1);
+    margin : 0;
+    padding : 0;
+    background-color: var(--color3);
+    color: var(--color4);
+    box-sizing: border-box;
+    /* padding : 10px; */
+}
+
+header{
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo{
+    display: flex;
+    align-items: center;
+    padding : 0;
+    height: max-content;
+}
+
+header .logo img{
+    width : 50px;
+    height: 50px;
+    margin-right : 10px;
+}
+
+header .logo h1{
+    text-transform: uppercase;
+    color : var(--color1);
+    font-size : 25px;
+}
+
+header nav{
+    width : 60%;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    padding-right : 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color : var(--color4);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size : 14px;
+
+}
+
+.landing-box{
+    background-image: url(./assets/bg.jpg);
+    height: calc(100vh - 250px);
+    background-size: cover;
+    padding : 100px 75px;
+
+}
+
+.landing-box .small{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color : var(--color1);
+    padding-bottom: 10px;
+}
+
+.landing-box .large{
+    font-size : 45px;
+    font-weight: bolder;
+    width : 45%;
+    margin-top : 10px;
+}
+
+.landing-box .large span{
+    color : var(--color1);
+}
+
+
+.landing-box .very-small {
+    font-size: 15px;
+    color : gray;
+    width : 45%;
+}
+
+h2{
+    text-align: center;
+    font-size : 2em;
+    margin : 70px 0px 0px 0px;
+    color: var(--color1);
+    letter-spacing: 3px;
+}
+
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin : 0;
+}
+
+.about-us .left{
+    width: 40%;
+    margin :50px;
+    padding : 50px 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(130deg, var(--color2) 93%, #FFFFFF00 90%);
+}
+
+
+.about-us .left img{
+    width : 70%;
+    height: auto;
+}
+
+.about-us .right{
+    padding : 20px;
+    width : 50%;
+
+}
+
+.about-us .right p{
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    padding : 50px;
+}
+
+.vision-mission .box{
+    width : 40%;
+    padding : 20px;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, var(--color1) 93%, #FFFFFF00 90%);
+}
+
+.vision-mission .box h3{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+.vision-mission .box p{
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+
+.staff-adv {
+    padding : 50px;
+    margin-top : 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .staff-adv img{
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+} */
+
+.staff-adv .image{
+    background-image: url(./assets/Photo.jpeg);
+    width : 300px;
+    height: 350px;
+    background-position-x: center;
+}
+
+.staff-adv .box p{
+    background-image: linear-gradient(130deg, var(--color1) 93%, #FFFFFF00 90%); 
+    padding : 10px;
+    position: relative;
+    bottom : 40px;
+    right : 30px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.staff-adv .box span{
+    font-size: 0.7em;
+}
+
+.upcoming-event {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding : 50px;
+    gap: 40px;
+}
+
+.upcoming-event .cont{
+    background-image: linear-gradient(130deg, var(--color2) 93%, #FFFFFF00 90%);
+    padding : 30px;
+}
+
+.upcoming-event img{
+    width: 100%;
+}
+
+.upcoming-event .cont .event-name{
+    color : var(--color1);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+
+.upcoming-event .cont .decription{
+    line-height: 30px;
+    color : whitesmoke
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap : 40px;
+    padding : 30px;
+    margin-top : 50px;
+
+}
+
+.classes .cont{
+    padding : 40px;
+    background-image: linear-gradient(130deg, var(--color2) 93%, #FFFFFF00 90%);
+
+}
+
+.classes .cont .martial-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes img{
+    width : 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.classes .cont .name h3{
+    background-image: linear-gradient(130deg, var(--color1) 93%, #FFFFFF00 90%);
+    position: relative;
+    bottom : 40px;
+    width: max-content;
+    right : 10px;
+    padding : 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.classes .cont .description {
+    position: relative;
+    bottom : 20px;
+    line-height: 30px;
+      letter-spacing: 2.5px;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap : 40px;
+    padding : 50px;
+}
+
+.reviews .review{
+    background-image:  linear-gradient(130deg, var(--color1) 93%, #FFFFFF00 90%);
+    padding : 20px;
+    line-height: 25px;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin : 50px;
+    padding : 10px;
+    background-color: var(--color2);
+}
+
+.contact .left{
+    padding : 50px;
+    width: 70%;
+}
+
+.contact .info{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.contact .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px;
+    width: 100%;
+}
+
+
+.contact .mobile .person{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.contact .mobile .p2{
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.contact .mobile .p2 img{
+    margin-left : 10px;
+}
+.contact .mobile img{
+    background-color: red;
+    padding : 10px;
+    margin-right: 10px;
+}
+.contact .right{
+    width : 50%;
+    padding : 20px;
+}
+
+.contact img{
+    width : 30px;
+    height: 30px;
+    
+}
+
+.contact .loc-mail img{
+    background-color: red;
+    padding : 10px;
+    margin-right: 10px;
+
+}
+
+.contact .loc-mail .box{
+    display: flex;
+    width: 50%;
+}
+
+.contact .person .number{
+    font-size : 14px;
+}
+
+
+
+.contact .mail-box{
+    justify-content: flex-end;
+}
+
+.contact .mail-box img{
+    margin-left : 10px;
+}
+
+
+.contact .social-medias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .social-medias p{
+    font-size : 1.5em;
+    text-transform: uppercase;
+
+}
+
+.contact .social-medias ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width : 20%;
+}
+
+.contact .social-medias ul li{
+    background-color: var(--color1);
+    border-radius: 100px;
+    padding : 5px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap : 40px;
+    padding : 50px;
+    background-color: var(--color3);
+}
+
+footer .box {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+footer .box .ele{
+    display: flex;
+    align-items: center;
+}
+
+footer .box .logo p{
+    font-size: 1.5em;
+    color : var(--color1);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+footer .icon img{
+    width: 20px;
+    height: 20px;
+    background-color: var(--color1);
+    margin-right : 10px;
+    margin-left : 15px;
+    padding : 10px;
+
+}
+
+footer .logo img{
+    width : 70px;
+    height: 70px;
+    margin-right : 10px;
+}
+
+footer .links img{
+    width: 20px;
+    height: 20px;
+}
+
+footer .links{
+    padding : 5px;
+}
+
+footer .links ul{
+    list-style: none;
+}
+
+footer .links ul li a{
+    color : white; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+footer .links ul li {
+    margin-top : 10px;
+}
+footer .links ul .head{
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color : var(--color1);
+    font-weight: bolder;
+}
+
+footer .wh{
+    padding : 20px;
+}
+
+footer .wh h3{
+    text-transform: uppercase;
+    color : var(--color1);
+}
+
+
+
+@media  only screen and (max-width : 1200){
+    header{
+        padding : 0 50px;
+    }   
+
+
+}
+
+@media  only screen and (max-width : 1000){
+    header{
+        padding : 0 30px;
+    }   
+}
+
+@media only screen and (max-width : 1000px){
+
+    h2{
+        margin-top : 20px;
+        font-size: 18px;
+    }
+
+    
+    header{
+        padding : 0px 0px;
+    }
+
+    header .logo{
+        margin : 20px;
+    }
+
+    header .logo h1{
+        font-size : 18px;
+    }
+
+    .menu{
+        display: block;
+        cursor : pointer;
+    }
+
+    .menu .line{
+        width : 30px;
+        background-color: white;
+        height : 3px;
+        margin : 5px 20px;
+    }
+
+    header nav{
+        position :absolute;
+        top : 70px;
+        width : 100%;
+        background-color: var(--color3); 
+
+        margin : 0;
+        transition : 0.2s;
+        height : 0px; 
+        overflow : hidden;
+    }
+
+
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin : 40px 0;
+        font-size: 20px;
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+    header nav ul li.active a{
+        border-bottom : 2px solid var(--color1);
+        padding-bottom : 3px;
+    }
+
+    header nav.active{
+        height: 500px;
+        transition: 0.5s;
+    }
+
+    header nav.active ul li{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .landing-box {
+        padding : 150px 50px;
+        text-align: center;
+    }
+
+    .landing-box .large{
+        font-size: 30px;
+        width: 100%;
+        margin-bottom : 50px;
+    }
+
+    .landing-box .very-small{
+        width: 100%;
+    }
+
+    .landing-box .large span{
+        display: block;
+    }
+
+    .about-us{
+        display: block;
+        text-align: center;
+    }
+
+    .about-us .left,
+    .about-us .right{
+        width : 70%;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .vision-mission{
+        display: block;
+        width: 100%;
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    .vision-mission .box{
+        width : 70%;
+        margin: auto;
+        margin-bottom : 50px;
+    }
+
+    .staff-adv {
+        display: block;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    .staff-adv .box{
+        margin : auto;
+        width: 70%;
+        align-items: center;
+        padding: 0;
+    }
+    .staff-adv .image{
+        margin: auto;
+        max-width: 250px;
+        height : 300px;
+    }
+    .staff-adv .box p{
+        width : calc(250px - 20px);
+        position: static;
+        margin: 20px auto;
+    }
+
+    .upcoming-event{
+        display: block;
+
+    }
+
+    .upcoming-event .cont{
+        margin-bottom: 20px;
+    }
+
+    .classes{
+        display: block;
+    }
+    
+
+    .classes .cont{
+        margin-bottom : 20px;
+    }
+
+    .classes .cont img{
+        width : 250px;
+        height : 300px;
+    }
+
+    .classes .cont .name h3{
+        right : 15px;
+        font-size: 16px;
+    }
+
+
+    .reviews {
+        display: block;
+    }
+
+    .reviews .review{
+        margin-bottom: 20px;
+    }
+
+    .contact{
+        margin : 20px;
+    }
+
+    .contact .cont{
+        display: block;
+        width: 100%;
+    }
+
+    .contact .left {
+        padding : 10px;
+        width : 90%;
+    }
+
+    .contact .left .info{
+        font-size : 16px;
+    }
+
+    .contact .cont .person{
+        width: 100%;
+    }
+
+    .contact .cont .box{
+        width: 100%;
+    }
+
+    .contact .social-medias ul{
+        width : 80%;
+        padding: 0;
+    }
+
+    footer{
+        display: block;
+    }
+
+    footer .logo{
+        margin-bottom : 20px;
+    }
+
+    footer .links{
+        width : 80%;
+        padding : 0;
+        margin : 20px;
+    }
+
+    footer .links ul{
+        padding : 0;
+        width : 100%;
+    }
+
+    footer .wh{
+        text-align: center;
+    }
+
+
+    
+
+    
+
+}
+
+
+
+
+
+
+
+
+ 
+
